@@ -1,0 +1,115 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <title>Toby's Resume</title>
+    </head>
+    <body>
+        <header>
+            <h1>Toby Woollums</h1>
+            <nav>
+                <a href="./resume.html">Resume</a> |
+                <a href="./cover_letter.html">Cover Letter</a> |
+                <a href="./career_goals.html">Career Goals</a>
+                <hr>
+            </nav>
+        </header>
+        <main>
+            <section>
+                <h2>Work Experience</h2>
+                <article>
+                    <h4>Full Stack Developer | Monument Software Group</h4>
+                    <h5>March 2025 - Present</h5>
+                    <ul>
+                        <li>Designed and developed a full stack SaaS to sell to small businesses</li>
+                        <li>Implemented JWT Auth, reviewed with a Cybersecurity consultant</li>
+                        <li>Organized sprints to implement new features and maintain steady progress for development</li>
+                    </ul>
+                </article>
+                <article>
+                    <h4>Java Intern | Revature</h4>
+                    <h5>August 2024 - December 2024</h5>
+                    <ul>
+                        <li>Built <strong>Java Backend REST APIs</strong> for mock social media websites</li>
+                        <li>Completed multiple projects using <em>Spring Framework</em></li>
+                        <li>Passed final evaluation on Java, Spring, Web Design at end of internship</li>
+                    </ul>
+                </article>
+            </section>
+            <br>
+            <section>
+                <h2>Education</h2>
+                <article>
+                    <h4>Western Governors University</h4>
+                    <h5>B.S. Computer Science</h5>
+                </article>
+                <article>
+                    <h4>Northwest Florida State College</h4>
+                    <h5>A.A. General Studies</h5>
+                </article>
+            </section>
+            <br>
+            <section>
+                <h2>Skills</h2>
+                <table alt="Skills">
+                    <tr>
+                        <td>
+                            HTML
+                        </td>
+                        <td>
+                            CSS
+                        </td>
+                        <td>
+                            JavaScript
+                        </td>
+                        <td>
+                            React
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Java
+                        </td>
+                        <td>
+                            C / C++
+                        </td>
+                        <td>
+                            Python
+                        </td>
+                        <td>
+                            React Native
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Node.js
+                        </td>
+                        <td>
+                            TypeScript
+                        </td>
+                        <td>
+                            Swift
+                        </td>
+                        <td>
+                            SQL
+                        </td>
+                    </tr>
+                </table>
+            </section>
+        </main>
+        <footer>
+            <hr>
+            <span>Thanks for viewing my resume</span>
+            <div id="dateBox"></div>
+        </footer>
+    </body>
+    <script>
+        const currentDate = new Date();
+        const year = currentDate.getFullYear();
+        const month = currentDate.toLocaleString('default', { month: 'long' });
+        const day = currentDate.getDate();
+        const formattedDate = `${month} ${day}, ${year}`;
+        document.getElementById("dateBox").textContent = formattedDate;
+    </script>
+</html>

@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <title>Toby's Cover Letter</title>
+    </head>
+    <body>
+        <header>
+            <h1>Toby Woollums</h1>
+            <nav>
+                <a href="./resume.html">Resume</a> |
+                <a href="./cover_letter.html">Cover Letter</a> |
+                <a href="./career_goals.html">Career Goals</a>
+                <hr>
+            </nav>
+        </header>
+        <main>
+            <h2>Cover Letter</h2>
+            <section>
+                <article>
+                    <p>Sample Content</p>
+                    <p>Some needs <mark>marked</mark>, and some needs <em>emphasis</em>, and some needs <strong>bolded</strong></p>
+                </article>
+            </section>
+        </main>
+        <footer>
+            <hr>
+            <span>Thanks for viewing my cover letter</span>
+            <div id="dateBox"></div>
+        </footer>
+    </body>
+    <script>
+        const currentDate = new Date();
+        const year = currentDate.getFullYear();
+        const month = currentDate.toLocaleString('default', { month: 'long' });
+        const day = currentDate.getDate();
+        const formattedDate = `${month} ${day}, ${year}`;
+        document.getElementById("dateBox").textContent = formattedDate;
+    </script>
+</html>
